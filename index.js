@@ -5,7 +5,7 @@ import route from './routers/index.js';
 import mongoose from 'mongoose';
 
 const app = express();
-const PORT = process.env.port || 3001;
+const PORT = process.env.PORT || 3001;
 const URI = 'mongodb+srv://admin:EsOhBWp6KClCmCKK@cluster0.uhr0soy.mongodb.net/?retryWrites=true&w=majority'
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '30mb' }));
