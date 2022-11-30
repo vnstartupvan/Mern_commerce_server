@@ -11,7 +11,7 @@ class user {
                     const newUser = new userModel(req.body);
                     return newUser.save();
                 } else {
-                    res.json(`tai khoan da ton tai`);
+                    res.status(400).json(`tai khoan da ton tai`);
                 }
             })
             .then(data => {
