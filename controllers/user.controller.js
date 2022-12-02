@@ -15,7 +15,7 @@ class user {
                 }
             })
             .then(data => {
-                res.json('tao tai khoan thanh cong');
+                res.status(200).json('tao tai khoan thanh cong');
             })
             .catch(error => {
                 res.status(500).json('Tao tai khoan that bai');
