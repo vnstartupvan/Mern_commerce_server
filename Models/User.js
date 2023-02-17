@@ -8,8 +8,9 @@ mongoose.plugin(slug);
 
 const schema = new Schema({
     id: ObjectId,
-    username: { type: String, require: true, minLength: 8, maxLength: 50 },
-    password: { type: String, require: true, minLength: 8, maxLength: 50 },
+    username: { type: String, require: true, minLength: 8, maxLength: 200 },
+    password: { type: String, require: true, minLength: 8, maxLength: 200 },
+    refreshToken: { type: String },
     name: { type: String, require: true },
     age: { type: String, require: true },
     avatar: { type: String },
